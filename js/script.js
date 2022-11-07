@@ -1,0 +1,20 @@
+let container_card = document.querySelector(".container_card");
+for (i = 1; i <= 6; i++) {
+    let card = document.createElement("div");
+    card.classList.add("card");
+    document.querySelector(".container_cards").append(card);
+
+    let img = document.createElement("img");
+    img.classList.add("card-img-top");
+    card.appendChild(img);
+
+    let cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+    card.appendChild(cardBody);
+
+    let p = document.createElement("p");
+    p.classList.add("card-text");
+    cardBody.appendChild(p)
+
+}
+
