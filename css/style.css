@@ -1,23 +1,44 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     height: 100vh;
     background-color: rgb(237, 237, 237);
 }
-.titolo_parag{
+
+.body{
+    background-color: rgb(237, 237, 237);;
+}
+
+.titolo_parag {
     max-width: 600px;
     margin: auto;
     margin-top: 3rem;
 }
-.titolo{
+
+.titolo {
     text-align: center;
     margin-bottom: 1rem;
-    
+
 }
-.paragrafo{
+
+.paragrafo {
     text-align: center;
     line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container_cards {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: auto;
+    
+}
+.card{
+    width: calc((1000px - 4rem) / 3);
 }
