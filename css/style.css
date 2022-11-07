@@ -29,8 +29,11 @@ html {
     text-align: center;
     line-height: 2rem;
     margin-bottom: 2rem;
+    
 }
-
+.card-text{
+    display: flex  !important;
+}
 .container_cards {
     max-width: 1000px;
     display: flex;
