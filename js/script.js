@@ -1,4 +1,6 @@
 let container_card = document.querySelector(".container_card");
+
+
 for (i = 1; i <= 6; i++) {
     let card = document.createElement("div");
     card.classList.add("card");
@@ -17,4 +19,47 @@ for (i = 1; i <= 6; i++) {
     cardBody.appendChild(p)
 
 }
+let p = document.querySelector(".card-text");
+const arrTeam = [
+    {
+        img: "img/wayne-barnett-founder-ceo.jpg",
+        nome: "Wayne Barnett",
+        professione: "Founder & CEO",
 
+    },
+    {
+        img: "img/wayne-barnett-founder-ceo.jpg",
+        nome: "Wayne Barnett",
+        professione: "Founder & CEO",
+
+    },
+    {
+        img: "img/wayne-barnett-founder-ceo.jpg",
+        nome: "Wayne Barnett",
+        professione: "Founder & CEO",
+
+    },
+    {
+        img: "img/wayne-barnett-founder-ceo.jpg",
+        nome: "Wayne Barnett",
+        professione: "Founder & CEO",
+
+    },
+    {
+        img: "img/wayne-barnett-founder-ceo.jpg",
+        nome: "Wayne Barnett",
+        professione: "Founder & CEO",
+
+    },
+    {
+        img: "img/wayne-barnett-founder-ceo.jpg",
+        nome: "Wayne Barnett",
+        professione: "Founder & CEO",
+
+    }
+];
+for (i = 0; i < arrTeam.length; i++){
+    document.querySelector(".card-img-top").src = "img/wayne-barnett-founder-ceo.jpg";
+    p.innerHTML = `${arrTeam[i].nome}`
+    // (`${i}: ${arrTeam[i].nome} ${arrTeam[i].professione}`)
+}
