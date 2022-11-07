@@ -41,6 +41,7 @@ html {
     gap: 2rem;
     margin: auto;
     
+    
 }
 .card{
     width: calc((1000px - 4rem) / 3);

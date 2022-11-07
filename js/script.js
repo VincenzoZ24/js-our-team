@@ -1,27 +1,27 @@
-let container_card = document.querySelector(".container_card");
+let containerCards = document.querySelector(".container_cards");
 
-for (i = 1; i <= 6; i++) {
-    let card = document.createElement("div");
-    card.classList.add("card");
-    document.querySelector(".container_cards").append(card);
+// for (i = 1; i <= 6; i++) {
+//     let card = document.createElement("div");
+//     card.classList.add("card");
+//     document.querySelector(".container_cards").append(card);
 
-    let img = document.createElement("img");
-    img.classList.add("card-img-top");
-    card.appendChild(img);
+//     let img = document.createElement("img");
+//     img.classList.add("card-img-top");
+//     card.appendChild(img);
 
-    let cardBody = document.createElement("div");
-    cardBody.classList.add("card-body");
-    card.appendChild(cardBody);
+//     let cardBody = document.createElement("div");
+//     cardBody.classList.add("card-body");
+//     card.appendChild(cardBody);
 
-    let p = document.createElement("div");
-    p.classList.add("card-text");
-    cardBody.appendChild(p)
-    let pro = document.createElement("div");
-    pro.classList.add("card-text_1");
-    cardBody.appendChild(pro)
+//     let p = document.createElement("div");
+//     p.classList.add("card-text");
+//     cardBody.appendChild(p)
+//     let pro = document.createElement("div");
+//     pro.classList.add("card-text_1");
+//     cardBody.appendChild(pro)
 
-}
-
+// }
+let card = document.querySelector(".container_cards")
 let pro = document.querySelector(".card-text_1")
 let p = document.querySelector(".card-text");
 const arrTeam = [
@@ -64,9 +64,12 @@ const arrTeam = [
 ];
 
 for (i = 0; i < arrTeam.length; i++){
-    document.querySelector(".card-img-top").src = "img/wayne-barnett-founder-ceo.jpg";
-    pro.innerHTML = `${arrTeam[i].professione}`
-    p.innerHTML = `${arrTeam[i].nome}`
-    
-    // console.log(`${i}: ${arrTeam[i].nome} ${arrTeam[i].professione}`)
+containerCards.innerHTML += `<div class="card">
+<img src="${arrTeam[i].img}" class="card-img-top" alt="...">
+<div class="card-body">
+  <div class="card-text">${arrTeam[i].nome}</div>
+  <div class="card-text_1">${arrTeam[i].professione}</div>
+
+</div>
+</div>`
 }
